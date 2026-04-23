@@ -1,6 +1,6 @@
 # Calculate Australia-scale biomass of 6 feral deer species and 5 large macropod species
-<img align="right" src="www/Sambar-cutout-greyscale.png" alt="Sambar deer" width="180" style="margin-top: 20px">
-<img align="right" src="www/red kangaroo-cutout-greyscale.png" alt="red kangaroo deer" width="180" style="margin-top: 20px">
+<img align="right" src="www/Sambar-cutout-greyscale.png" alt="Sambar deer" width="70" style="margin-top: 20px">
+<img align="right" src="www/red kangaroo-cutout-greyscale.png" alt="red kangaroo deer" width="90" style="margin-top: 20px">
 
 Comparing total biomasses of feral deer and macropod species in Australia.
 
@@ -35,5 +35,5 @@ April 2026 <br>
 <br>
 <br>
 
-<p><a href="https://www.flinders.edu.au"><img align="bottom-left" src="www/Flinders_University_Logo_Horizontal_RGB_Master.png" alt="Flinders University" width="140" style="margin-top: 20px"></a> &nbsp; <a href="https://globalecologyflinders.com"><img align="bottom-left" src="www/GEL Logo Kaurna New Transp.png" alt="GEL" width="75" style="margin-top: 20px"></a></p>
+<p><a href="https://www.flinders.edu.au"><img align="bottom-left" src="www/Flinders_University_Logo_Stacked_RGB_Master.png" alt="Flinders University" width="140" style="margin-top: 20px"></a> &nbsp; <a href="https://globalecologyflinders.com"><img align="bottom-left" src="www/GEL Logo Kaurna New Transp.png" alt="GEL" width="150" style="margin-top: 20px"></a></p>
 
