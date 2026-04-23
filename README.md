@@ -1,7 +1,7 @@
-# Calculate Australia-scale biomass of 6 feral deer species and 5 large macropod species
+# Australia-scale biomass of 6 feral deer species and 5 large macropod species
 <img align="right" src="www/fallow-cutout-greyscale.png" alt="fallow deer (<em>Dama dama</em>)" width="130" style="margin-top: 20px">
 
-Comparing total biomasses of feral deer and macropod species in Australia.
+Calculating and comparing total biomasses of main feral deer and macropod species in Australia.
 
 <br>
 Prof <a href="https://globalecologyflinders.com/people/#DIRECTOR">Corey J. A. Bradshaw</a> <br>
