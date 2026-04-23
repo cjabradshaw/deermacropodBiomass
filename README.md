@@ -1,2 +1,2 @@
-# deermacropodBiomass
-Calculate Australia-scale biomass of 6 feral deer species &amp; 5 large macropod species
+# Calculate Australia-scale biomass of 6 feral deer species and 5 large macropod species
+
