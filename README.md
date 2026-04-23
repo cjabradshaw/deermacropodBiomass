@@ -1,6 +1,6 @@
 # Calculate Australia-scale biomass of 6 feral deer species and 5 large macropod species
 <img align="right" src="www/Sambar-cutout-greyscale.png" alt="Sambar deer" width="180" style="margin-top: 20px">
-<img align="right" src="www/red-cutout-greyscale.png" alt="red kangaroo deer" width="180" style="margin-top: 20px">
+<img align="right" src="www/red kangaroo-cutout-greyscale.png" alt="red kangaroo deer" width="180" style="margin-top: 20px">
 
 Comparing total biomasses of feral deer and macropod species in Australia.
 
