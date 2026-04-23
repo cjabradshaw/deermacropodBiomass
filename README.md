@@ -1,6 +1,5 @@
 # Calculate Australia-scale biomass of 6 feral deer species and 5 large macropod species
-<img align="right" src="www/Sambar-cutout-greyscale.png" alt="Sambar deer" width="100" style="margin-top: 20px">
-<img align="right" src="www/western grey-cutout-greyscale.png" alt="western grey kangaroo" width="130" style="margin-top: 20px">
+
 
 Comparing total biomasses of feral deer and macropod species in Australia.
 
@@ -13,6 +12,7 @@ April 2026 <br>
 
 ## Species compared
 ### deer
+<img align="right" src="www/Sambar-cutout-greyscale.png" alt="Sambar deer" width="100" style="margin-top: 20px">
 - <a href="https://feralscan.org.au/deerscan/content/deer_reddeer">red deer</a> <em>Cervus elaphus</em>
 - <a href="https://feralscan.org.au/deerscan/content/deer_fallow">fallow deer</a> <em>Dama dama</em>
 - <a href="https://feralscan.org.au/deerscan/content/deer_sambardeer">Sambar deer</a> <em>Rusa unicolor</em>
@@ -21,6 +21,7 @@ April 2026 <br>
 - <a href="https://feralscan.org.au/deerscan/content/deer_hogdeer">hog deer</a> <em>Axis porcinus</em>
 
 ### macropods
+<img align="right" src="www/western grey-cutout-greyscale.png" alt="western grey kangaroo" width="130" style="margin-top: 20px">
 - <a href="https://australian.museum/learn/animals/mammals/red-kangaroo/">red kangaroo</a> <em>Osphranter rufus</em>
 - <a href="https://australian.museum/learn/animals/mammals/eastern-grey-kangaroo/">eastern grey kangaroo</a> <em>Macropus giganteus</em>
 - <a href="https://bie.ala.org.au/species/https://biodiversity.org.au/afd/taxa/e9b141fb-9c47-46a3-b631-39b175a2cd74">western grey kangaroo</a> <em>Macropus fuliginosus</em>
