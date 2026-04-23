@@ -21,11 +21,11 @@ April 2026 <br>
 - <a href="https://feralscan.org.au/deerscan/content/deer_hogdeer">hog deer</a> <em>Axis porcinus</em>
 
 ### macropods
-- red kangaroo <em>Osphranter rufus</em>
-- eastern grey kangaroo <em>Macropus giganteus</em>
-- western grey kangaroo <em>Macropus fuliginosus</em>
-- wallaroo <em>Osphranter robustus</em>
-- Tammar wallaby <em>Notamacropus eugenii</em>
+- <a href="https://australian.museum/learn/animals/mammals/red-kangaroo/">red kangaroo</a> <em>Osphranter rufus</em>
+- <a href="https://australian.museum/learn/animals/mammals/eastern-grey-kangaroo/">eastern grey kangaroo</a> <em>Macropus giganteus</em>
+- <a href="https://bie.ala.org.au/species/https://biodiversity.org.au/afd/taxa/e9b141fb-9c47-46a3-b631-39b175a2cd74">western grey kangaroo</a> <em>Macropus fuliginosus</em>
+- <a href="https://en.wikipedia.org/wiki/Common_wallaroo">wallaroo</a> <em>Osphranter robustus</em>
+- <a href="https://library.dbca.wa.gov.au/FullTextFiles/071537.pdf">Tammar wallaby</a> <em>Notamacropus eugenii</em>
 
 ## <a href="https://github.com/cjabradshaw/deermacropodBiomass/tree/main/scripts">Scripts</a>
 - <code>biomasscalc.R</code> (main code)
