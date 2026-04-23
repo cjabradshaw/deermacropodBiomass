@@ -23,7 +23,7 @@ April 2026 <br>
 ### macropods
 - red kangaroo <em>Osphranter rufus</em>
 - eastern grey kangaroo <em>Macropus giganteus</em>
-- western grey kangaroo <em>Macropus fuliginosusr</em>
+- western grey kangaroo <em>Macropus fuliginosus</em>
 - wallaroo <em>Osphranter robustus</em>
 - Tammar wallaby <em>Notamacropus eugenii</em>
 
