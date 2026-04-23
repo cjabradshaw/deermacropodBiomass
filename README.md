@@ -1,6 +1,6 @@
 # Calculate Australia-scale biomass of 6 feral deer species and 5 large macropod species
 <img align="right" src="www/Sambar-cutout-greyscale.png" alt="Sambar deer" width="100" style="margin-top: 20px">
-<img align="right" src="www/western grey-cutout-greyscale.png" alt="western grey kangaroo" width="140" style="margin-top: 20px">
+<img align="right" src="www/western grey-cutout-greyscale.png" alt="western grey kangaroo" width="130" style="margin-top: 20px">
 
 Comparing total biomasses of feral deer and macropod species in Australia.
 
@@ -13,12 +13,12 @@ April 2026 <br>
 
 ## Species compared
 ### deer
-- red deer <em>Cervus elaphus</em>
-- fallow deer <em>Dama dama</em>
-- Sambar deer <em>Rusa unicolor</em>
-- chital deer <em>Cervus axis</em>
-- rusa deer <em>Rusa timorensis</em>
-- hog deer <em>Axis porcinus</em>
+- <a href="https://feralscan.org.au/deerscan/content/deer_reddeer">red deer</a> <em>Cervus elaphus</em>
+- <a href="https://feralscan.org.au/deerscan/content/deer_fallow">fallow deer</a> <em>Dama dama</em>
+- <a href="https://feralscan.org.au/deerscan/content/deer_sambardeer">Sambar deer</a> <em>Rusa unicolor</em>
+- <a href="https://feralscan.org.au/deerscan/content/deer_chitaldeer">chital deer</a> <em>Cervus axis</em>
+- <a href="https://feralscan.org.au/deerscan/content/deer_rusadeer">rusa deer</a> <em>Rusa timorensis</em>
+- <a href="https://feralscan.org.au/deerscan/content/deer_hogdeer">hog deer</a> <em>Axis porcinus</em>
 
 ### macropods
 - red kangaroo <em>Osphranter rufus</em>
@@ -35,5 +35,5 @@ April 2026 <br>
 <br>
 <br>
 
-<p><a href="https://www.flinders.edu.au"><img align="bottom-left" src="www/Flinders_University_Logo_Stacked_RGB_Master.png" alt="Flinders University" width="80" style="margin-top: 20px"></a> &nbsp; <a href="https://globalecologyflinders.com"><img align="bottom-left" src="www/GEL Logo Kaurna New Transp.png" alt="GEL" width="150" style="margin-top: 20px"></a></p>
+<p><a href="https://www.flinders.edu.au"><img align="bottom-left" src="www/Flinders_University_Logo_Stacked_RGB_Master.png" alt="Flinders University" width="80" style="margin-top: 20px"></a> &nbsp; <a href="https://globalecologyflinders.com"><img align="bottom-left" src="www/GEL Logo Kaurna New Transp.png" alt="GEL" width="170" style="margin-top: 20px"></a></p>
 
