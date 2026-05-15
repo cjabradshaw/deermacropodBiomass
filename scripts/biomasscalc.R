@@ -1,6 +1,6 @@
 ## deer vs. macropod biomass calculations
 # Corey Bradshaw
-# April 2026
+# May 2026
 
 ## libraries
 library(ggplot2)
@@ -8,30 +8,49 @@ library(ggpubr)
 
 ## DEER
 ## deer body masses (M) in kg
-## Ce = Cervus elaphus; Dd = Dama dama; Ru = Rusa unicolor;
-## Ca = Cervus axis; Rt = Rusa timorensis; Ap = Axis porcinus
+## Ce = Cervus elaphus (red deer); Dd = Dama dama (fallow deer); Ru = Rusa unicolor (Sambar deer);
+## Ca = Cervus axis (chital deer); Rt = Rusa timorensis (rusa deer); Ap = Axis porcinus (hog deer)
 ## m = male; f = female
 ## Lo = lower limit; Up = upper limit
-## source: feralscan.org.au/deerscan/content/deer_fallow; feralscan.org.au/deerscan/content/deer_reddeer;
+## sources: feralscan.org.au/deerscan/content/deer_fallow; feralscan.org.au/deerscan/content/deer_reddeer;
 ## feralscan.org.au/deerscan/content/deer_sambardeer; feralscan.org.au/deerscan/content/deer_chitaldeer;
 ## feralscan.org.au/deerscan/content/deer_rusadeer; feralscan.org.au/deerscan/content/deer_hogdeer
+## https://doi.org/10.1071/WR23028
+
+# Cervus elaphus
 M_Ce_m_Lo <- 135; M_Ce_m_Up <- 220
+M_Ce_m_Mn <- 180.0;
+# M_Ce_m_SD <- 0 # https://doi.org/10.1071/WR23028
+M_Ce_m_SD <- (M_Ce_m_Up - mean(c(M_Ce_m_Up, M_Ce_m_Lo)))/1.96 # SD = (upper limit - mean)/1.96 assuming range = 95% confidence interval
 M_Ce_f_Lo <- 95; M_Ce_f_Up <- 95 # no range provided
+M_Ce_f_Mn <- 153.3; M_Ce_f_SD <- 4.7 # https://doi.org/10.1071/WR23028
+
+# Dama dama
 M_Dd_m_Lo <- 60; M_Dd_m_Up <- 100
 M_Dd_f_Lo <- 40; M_Dd_f_Up <- 50
-M_Ru_m_Lo <- 300; M_Ru_m_Up <- 300 # no range provided
-M_Ru_f_Lo <- 230; M_Ru_f_Up <- 230 # no range provided
+
+# Rusa unicolor
+#M_Ru_m_Lo <- 300; M_Ru_m_Up <- 300 # no range provided
+M_Ru_m_Mn <- 199.6; M_Ru_m_SD <- 22.0 # https://doi.org/10.1071/WR23028 
+#M_Ru_f_Lo <- 230; M_Ru_f_Up <- 230 # no range provided
+M_Ru_f_Mn <- 147.7; M_Ru_f_SD <- 11.4 # https://doi.org/10.1071/WR23028
+
+# Cervus axis
 M_Ca_m_Lo <- 85; M_Ca_m_Up <- 85 # no range provided
 M_Ca_f_Lo <- 60; M_Ca_f_Up <- 60 # no range provided
+
+# Rusa timorensis
 M_Rt_m_Lo <- 135; M_Rt_m_Up <- 135 # no range provided
 M_Rt_f_Lo <- 90; M_Rt_f_Up <- 90 # no range provided
+
+# Axis porcinus
 M_Ap_m_Lo <- 55; M_Ap_m_Up <- 55 # no range provided
 M_Ap_f_Lo <- 30; M_Ap_f_Up <- 30 # no range provided
 
 ## mean species mass
-M_Ce <- mean(c(M_Ce_m_Lo, M_Ce_m_Up, M_Ce_f_Lo, M_Ce_f_Up))
+M_Ce <- mean(c(M_Ce_m_Mn, M_Ce_f_Mn)) # use mean of male and female means
 M_Dd <- mean(c(M_Dd_m_Lo, M_Dd_m_Up, M_Dd_f_Lo, M_Dd_f_Up))
-M_Ru <- mean(c(M_Ru_m_Lo, M_Ru_m_Up, M_Ru_f_Lo, M_Ru_f_Up))
+M_Ru <- mean(c(M_Ru_m_Mn, M_Ru_f_Mn)) # use mean of male and female means
 M_Ca <- mean(c(M_Ca_m_Lo, M_Ca_m_Up, M_Ca_f_Lo, M_Ca_f_Up))
 M_Rt <- mean(c(M_Rt_m_Lo, M_Rt_m_Up, M_Rt_f_Lo, M_Rt_f_Up))
 M_Ap <- mean(c(M_Ap_m_Lo, M_Ap_m_Up, M_Ap_f_Lo, M_Ap_f_Up))
@@ -114,6 +133,7 @@ deer.dat <- data.frame(species = c("Rusa unicolor", "Cervus elaphus", "Dama dama
                         biomass_Lo = c(B_Ru_Lo, B_Ce_Lo, B_Dd_Lo, B_Rt_Lo, B_Ca_Lo, B_Ap_Lo),
                         biomass_Up = c(B_Ru_Up, B_Ce_Up, B_Dd_Up, B_Rt_Up, B_Ca_Up, B_Ap_Up),
                         biomass_Md = c((B_Ru_Lo + B_Ru_Up)/2, (B_Ce_Lo + B_Ce_Up)/2, (B_Dd_Lo + B_Dd_Up)/2, (B_Rt_Lo + B_Rt_Up)/2, (B_Ca_Lo + B_Ca_Up)/2, (B_Ap_Lo + B_Ap_Up)/2))
+colSums(deer.dat[,c("biomass_Lo", "biomass_Up", "biomass_Md")])
 
 plt1 <- ggplot(deer.dat, aes(x = reorder(species, -biomass_Md), y = biomass_Md)) +
   geom_bar(stat = "identity", fill = "lightblue") +
@@ -126,6 +146,11 @@ plt1 <- ggplot(deer.dat, aes(x = reorder(species, -biomass_Md), y = biomass_Md))
 ## plot vertical bar graph for macropod species in descending order
 macropod.dat <- data.frame(species = c("Osphranter rufus", "Macropus giganteus", "Macropus fuliginosus", "Osphranter robustus", "Notamacropus eugenii"),
                              biomass = c(B_Oru, B_Mg, B_Mf, B_Oro, B_Ne))
+sum(macropod.dat[,c("biomass")])
+
+## % deer of macropod biomass
+pc_deer_of_macropod <- 100 * colSums(deer.dat[,c("biomass_Lo", "biomass_Up", "biomass_Md")]) / sum(macropod.dat[,c("biomass")])
+pc_deer_of_macropod
 
 plt2 <- ggplot(macropod.dat, aes(x = reorder(species, -biomass), y = biomass)) +
   geom_bar(stat = "identity", fill = "lightgreen") +
