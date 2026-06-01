@@ -1,4 +1,5 @@
 # Australia-scale biomass of main feral deer and large macropod species
+<a href="https://doi.org/10.5281/zenodo.20481875"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20481875.svg" alt="DOI"></a>
 <img align="right" src="www/fallow-cutout-greyscale.png" alt="fallow deer (<em>Dama dama</em>)" width="130" style="margin-top: 20px">
 
 Calculating and comparing total biomasses of main feral deer and macropod species in Australia.
