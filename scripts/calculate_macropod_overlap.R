@@ -2,6 +2,8 @@
 ##
 ## ALA_EMAIL=your-registered-email Rscript scripts/calculate_macropod_overlap.R
 ##
+## deer occupany data from ABARES Feral Deer Occurrence 2026 (v1.0.0)
+## https://www.agriculture.gov.au/abares/research-topics/invasive-species/feral-deer
 ## candidate species: mainland macropods with mean adult mass of ≥
 ## 10 kg not already represented by commercial-survey estimates
 ## in biomasscalc.R
@@ -18,6 +20,8 @@
 
 library(galah)
 library(terra)
+
+ala_email = "cjabradshaw@gmail.com"
 
 ala_email <- trimws(Sys.getenv("ALA_EMAIL", unset = ""))
 if (!nzchar(ala_email)) {
