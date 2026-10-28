@@ -21,8 +21,6 @@
 library(galah)
 library(terra)
 
-ala_email = "cjabradshaw@gmail.com"
-
 ala_email <- trimws(Sys.getenv("ALA_EMAIL", unset = ""))
 if (!nzchar(ala_email)) {
   stop("Set ALA_EMAIL to an email address registered with the Atlas of Living Australia.", call. = FALSE)
