@@ -34,7 +34,7 @@ April 2026 <br>
 - <a href="https://fauna.com.au/species-profiles/red-necked-wallaby-notamacropus-rufogriseus/">red-necked wallaby</a> <em>Notamacropus rufogriseus</em>
 - <a href="https://wildlife.org.au/news-resources/educational-resources/species-profiles/mammals/wallabies/whiptail-wallaby/">whiptail wallaby</a> <em>Notamacropus parryi</em>
 
-## deer-range overlap & uncertainty
+## Deer-range overlap & uncertainty
 The addition of non-harvested macropod species (<em>Wallabia bicolor</em>, <em>Notamacropus rufogriseus</em>, and <em>Notamacropus parryi</em>) among potential mainland macropods based on the following inclusion criteria: (<em>i</em>) ≥ 10 kg mean adult mass, (<em>ii</em>) ≥ 1000 valid ALA records, and (<em>iii</em>) ≥ 150 overlapping deer-map cells (60,000 km<sup>2</sup>). `scripts/calculate_macropod_overlap.R` downloads post-2000 Atlas of Living Australia records, intersects them with the 20 km × 20 km ABARES <em>Current National Occurrence of Feral Deer in Australia (2026)</em> grid (DOI: <a href="https://doi.org/10.25814/bzzm-tt25">10.25814/bzzm-tt25</a>), and produces a second map showing the ALA points for the included and commercially harvested macropods over the deer grid. Commercial species use open grey symbols and the additional species use filled black symbols. For each commercially harvested species and state, it also creates a concave-hull range proxy from unique occupied ALA cells and calculates the proportion overlapping deer occurrence in `data/commercial_macropod_deer_overlap_2026.csv`. `data/macropod_overlap_screening_2026.csv` records every candidate, its spatial result, and any exclusion reason; `data/macropod_deer_overlap_2026.csv` contains the included taxa. Regenerate all summaries after setting `ALA_EMAIL` to an ALA-registered email address.
 
 State-specific harvest estimates for red kangaroo, eastern grey kangaroo, western grey kangaroo, and common wallaroo are multiplied by the matching deer-overlap fraction before their biomass is summed. The fraction is based on the area of a concave-hull ALA range proxy that overlaps the deer grid within that state; it assumes uniform density within the species' state range and is not a population survey.
@@ -45,7 +45,13 @@ No range-wide survey estimates are available for these non-commercial species. T
 At the end of `biomasscalc.R`, a separate scenario estimates total deer abundance from each species' ABARES occurrence-map area and the same Damuth density allometry used for added macropods. The species-specific allometric estimates are summed to calculate the national total, then the Moriarty (2004) species proportions allocate that total among deer taxa. The current density multiplier produces the lower and upper bounds. A second set of deer, macropod, and total-biomass plots presents this scenario separately from the assumed deer-population analysis.
 
 ## <a href="https://github.com/cjabradshaw/deermacropodBiomass/tree/main/scripts">Scripts</a>
-- <code>biomasscalc.R</code> (main code)
+- <code>calculate_macropod_overlap.R</code>: spatial overlap assessment
+- <code>biomasscalc.R</code>: biomass calculations
+
+## <a href="https://github.com/cjabradshaw/deermacropodBiomass/tree/main/data">Scripts</a>
+- <code>FeralDeerOccurrence2026_Data</code>: a subfolder including georeferenced .tif files of (verified and modelled) feral deer occurrence from the <a href="https://www.agriculture.gov.au/abares">Australian Bureau of Agricultural and Resource Economics and Sciences</a> (ABARES) <a href="https://www.agriculture.gov.au/abares/research-topics/invasive-species/feral-deer"><em>Current National Occurrence of Feral Deer in Australia (2026)</em></a> layers for (<em>i</em>) all deer occurrence, (<em>ii</em>) chital deer, (<em>iii</em>) fallow deer, (<em>iv</em>) hog deer, (<em>v</em>) red deer, (<em>vi</em>) rusa deer, and (<em>vii</em>) Sambar deer.
+- <em>macropod_overlap_screening.csv</em>: Atlas of Living Australia candidate macropod assessment for inclusion in overlap analysis (see criteria in <strong>Deer-range overlap & uncertainty</strong> section above)
+- <em>commercial_macropod_deer_overlap.csv</em>: deer, macropod range sizes and overlap fractions calculated from <code>calculate_macropod_overlap.R</code>
 
 ## R libraries
 <code>ggplot2</code>, <code>ggpubr</code>, <code>galah</code>, <code>terra</code>, and <code>rnaturalearth</code>
