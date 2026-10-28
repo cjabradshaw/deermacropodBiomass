@@ -1,0 +1,8 @@
+"species","ala_scientific_name","ala_records","overlap_cells","overlap_area_km2","mean_mass_kg","sufficient_ala_records","sufficient_deer_overlap","included","exclusion_reason"
+"Wallabia bicolor","Wallabia bicolor",469987,1215,486000,15,TRUE,TRUE,TRUE,"included"
+"Macropus rufogriseus","Macropus rufogriseus",86055,953,381200,16.75,TRUE,TRUE,TRUE,"included"
+"Macropus parryi","Macropus parryi",1592,153,61200,16,TRUE,TRUE,TRUE,"included"
+"Macropus dorsalis","Macropus dorsalis",33313,130,52000,18,TRUE,FALSE,FALSE,"insufficient deer-grid overlap"
+"Macropus agilis","Macropus agilis",53526,88,35200,16,TRUE,FALSE,FALSE,"insufficient deer-grid overlap"
+"Macropus antilopinus","Macropus antilopinus",3743,7,2800,20,TRUE,FALSE,FALSE,"insufficient deer-grid overlap"
+"Osphranter bernardus","Osphranter bernardus",1278,12,4800,19,TRUE,FALSE,FALSE,"insufficient deer-grid overlap"
