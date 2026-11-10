@@ -10,6 +10,12 @@ Prof <a href="https://globalecologyflinders.com/people/#DIRECTOR">Corey J. A. Br
 April 2026 <br>
 <a href=mailto:corey.bradshaw@flinders.edu.au>e-mail</a> <br>
 <br>
+<br>
+Accompanies paper:<br>
+McCarthy, E. <em>et al</em>. In press. Misrepresented and biased methods and conclusions regarding the ecological impacts of invasive deer in Australia: a critique of Chapple et al. 2025. <strong><em>Australian Mammalogy</em></strong><br>
+<br>
+<strong>Abstract</strong><br>
+Biological invasion is one of the greatest threats to wildlife globally, and no more so than in Australia. Recently, a non-peer-reviewed report by <a href="https://doi.org/10.71741/4pyxmbnjaq.28537109.v3">Chapple et al. (2025)</a> claimed to assess evidence for the ecological impacts of introduced deer in Australia. Using multiple lines of evidence, we demonstrate that their overarching conclusion that “… the effects of Australian deer do not appear to be different from those of Australian native herbivores, deer in their native ranges, or from African herbivores” is inaccurate and unsupported, and their comparisons are invalid because of false equivalency, misrepresentation, and biased selection of studies. There is substantial evidence from Australia and elsewhere of negative impacts of invasive deer that justifies their management in Australia to protect ecosystem health. We explore the implications of the conclusions of Chapple et al. (2025) in the context of ‘compassionate conservation’, a movement with which the authors align. Sound management of invasive species should include scientific and ethical considerations, but critically, it should be driven by evidence, not ideologies. It remains vital to control feral and invasive deer populations in Australia, and where practical, eradication should be the goal. Delays will lead to larger, more widespread deer populations, exacerbating negative impacts to the natural environment and human interests, and making future control measures more complex and costly.<br>
 
 ## Species compared
 ### deer
